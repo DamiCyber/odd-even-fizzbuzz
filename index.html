@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  
+<body>
+   <div class="con" style="display: flex; justify-content: space-around;">
+    <div id="show"><h3>even</h3></div>
+    <div id="check"><h3>odd</h3></div>
+    <div id="fizz"><h3>fizz</h3></div>
+    <div id="buzz"><h3>buzz</h3></div>
+    <div id="watch"><h3>fizzbuzz</h3></div>
+   </div>
+     <script>
+         for(i=0; i<=100; i++){
+            if(i%2==0){
+                show.innerHTML +=`<p style= "color:green;">${i} i am even bro</p>`
+            }
+            else if (i%2!==0){
+                check.innerHTML +=`<p style="color:red; ">${i} i am odd bro</p>`
+            }
+         }
+          for(i=0; i<=100; i++){
+              if(i%3==0 && i%5==0){
+                watch.innerHTML +=`<p style="color:blue; ">${i} fizzbuzz bro </p>`
+              }
+              else if(i%3==0 && i%5!==0){
+                fizz.innerHTML +=`<p style="color:brown; ">${i} fizz bro</p>`
+              }
+              else if(i%3!==0 && i%5==0){
+                buzz.innerHTML +=`<p style="color:orange; ">${i} buzz bro</p>`
+              }
+          }
+     </script>
+</body>
+</html>
